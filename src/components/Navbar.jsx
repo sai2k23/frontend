@@ -31,15 +31,15 @@ const Navbar = () => {
           }`}
         >
           <li>
-            <Link to="/#features" className="hover:text-indigo-500">
+            <a href="#features" className="hover:text-indigo-500">
               Features
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link to="/#contact" className="hover:text-indigo-500">
+            <a href="#contact" className="hover:text-indigo-500">
               Contact
-            </Link>
+            </a>
           </li>
 
           {/* New Auth Buttons */}
