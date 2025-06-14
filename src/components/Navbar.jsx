@@ -61,6 +61,19 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      {/* Mobile Dropdown Menu */}
+      {open && (
+        <div className="sm:hidden bg-white dark:bg-gray-900 shadow-md px-4 py-3 space-y-3 font-medium">
+          <a href="#features" className="block hover:text-indigo-500">Features</a>
+          <a href="#contact" className="block hover:text-indigo-500">Contact</a>
+          <Link to="/login" className="block text-sm px-4 py-2 rounded bg-indigo-500 text-white hover:bg-indigo-600">
+            Login
+          </Link>
+          <Link to="/register" className="block text-sm px-4 py-2 rounded border border-indigo-500 text-indigo-600 hover:bg-indigo-100">
+            Register
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };
